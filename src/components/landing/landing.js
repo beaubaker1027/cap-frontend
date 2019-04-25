@@ -18,7 +18,7 @@ class Landing extends Component {
       <div className='page'>
         <Header className='header' />
           <div id='landing' className='content'>
-            <img className='logo' src='../../../public/source/cap.png' alt='not supported'/>
+            <img className='logo' src={`${process.env.PUBLIC_URL}/source/cap.png`} alt='not supported'/>
             <div className='buttons'>
               <Link className='link-buttons' to='/signup'>
                 Sign Up

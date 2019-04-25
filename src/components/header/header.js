@@ -23,14 +23,14 @@ class Header extends Component {
     return (
         <header style={{backgroundColor:theme.capBlue, color: theme.capRed, position:'relative'}} className="App-header">
             <div className='left'>
-              <img className='header-img' src='../../../public/source/burger.png' alt="browser doesnt support this" onClick={() => {this.setState({toggleDrawer:!this.state.toggleDrawer})}}/>
+              <img className='header-img' src={`${process.env.PUBLIC_URL}/source/burger.png`} alt="browser doesnt support this" onClick={() => {this.setState({toggleDrawer:!this.state.toggleDrawer})}}/>
             </div>
-            <Drawer
+            {/*<Drawer
               toggle={this.state.toggleDrawer}
               isUser={this.state.isUser}
-              />
+              />*/}
             <a className='right' href="/settings">
-              <img className='header-img' src='../../../public/source/gear.png' alt="browser doesnt support this"/>
+              <img className='header-img' src={`${process.env.PUBLIC_URL}/source/gear.png`} alt="browser doesnt support this"/>
             </a>
         </header>
     );
